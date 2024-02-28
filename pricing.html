@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 50px;
+        }
+
+        .pricing-box {
+            position: relative; /* Added */
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .pricing-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .feature-list {
+            padding: 0;
+            margin: 20px,  0;
+            text-align: center;
+        }
+
+        .feature-list li {
+            margin-bottom: 8px;
+            padding-top: 10px; /* Adding padding to the top of each feature */
+            color: #555;
+            list-style: none;
+            line-height: 1.5;
+            
+        }
+
+        .price {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #007bff;
+            transform: translateY(-60px)
+            
+        }
+        
+
+        .suitable {
+            color: #888;
+            transform: translateY(-40px)
+           
+            
+        }
+
+        .subscribe-btn {
+            position: absolute; /* Added */
+            bottom: 30px; /* Adjust as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 50%;
+            height: 50px; /* Adding consistent height to the buttons */
+        }
+
+        .subscribe-btn:hover {
+            background-color: #0056b3;
+        }
+
+        @media screen and (max-width: 768px) {
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .pricing-box {
+                width: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-box">
+            <h2 class="title">Basic Plan</h2>
+            <ul class="feature-list">
+                <li>AI investing assistance ✓</li>
+                <li>Blockchain security ✓</li>
+                <li>Up to 10Gb bandwidth ✓</li>
+                <li>AI auto investing ❌</li>
+                <li>Desktop Application ❌</li>
+                <li>24/7 support ❌</li>
+                <li>End to end data encryption ❌</li>
+            </ul>
+            <p class="suitable">Basic plan is suitable for normal people/families who either want to keep track of their finances/expenses and start growing wealth.</p>
+            <h1 class="price" >9.99€/month</h1>
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+
+        <div class="pricing-box">
+            <h2 class="title">Premium Plan</h2>
+            <ul class="feature-list">
+                <li>AI investing assistance ✓</li>
+                <li>Blockchain security ✓</li>
+                <li>Up to 30Gb bandwidth ✓</li>
+                <li>AI auto investing ✓</li>
+                <li>Desktop Application ✓</li>
+                <li>24/7 support ❌</li>
+                <li>End to end data encryption ❌</li>
+            </ul>
+            <p class="suitable">Premium plan is suitable for experienced investors trying to make bigger trades.</p>
+            <h1 class="price" >19.99€/month</h1>
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+
+        <div class="pricing-box">
+            <h2 class="title">Enterprise Plan</h2>
+            <ul class="feature-list">
+                <li>AI investing assistance ✓</li>
+                <li>Blockchain security ✓</li>
+                <li>Up to 30Gb bandwidth ✓</li>
+                <li>AI auto investing ✓</li>
+                <li>Desktop Application ✓</li>
+                <li>24/7 support ✓</li>
+                <li>End to end data encryption ✓</li>
+            </ul>
+            <p class="suitable">Enterprise plan is suitable for small to medium size companies who need help with their finances.</p>
+            <h1 class="price">49.99€/month</h1>
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+
+        <div class="pricing-box">
+            <h2 class="title">Custom Plan</h2>
+            <ul class="feature-list">
+                <li>AI investing assistance ✓</li>
+                <li>Blockchain security ✓</li>
+                <li>Up to 30Gb bandwidth ✓</li>
+                <li>AI auto investing ✓</li>
+                <li>Desktop Application ✓</li>
+                <li>24/7 support ✓</li>
+                <li>End to end data encryption ✓</li>
+            </ul>
+            <p class="suitable">Custom plan is suitable for big companies or big investors since it offers the most advanced features on the market.</p>
+            <h1 class="price" >99.99€/month</h1>
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+    </div>
+</body>
+</html>

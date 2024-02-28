@@ -1,0 +1,149 @@
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100px; /* Adjust size as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+}
+
+
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #555;
+}
+xisting styles */
+
+
+
+
+.explore-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+
+/* Existing styles */
+
+/* Styling for the Login button */
+.login-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+
+/* Existing styles */
+
+/* Styling for the Explore button */
+.explore-btn {
+    background-color: #007bff; /* Blue background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.explore-btn:hover {
+    background-color: #4e8af9; /* Brighter blue on hover */
+    transform: scale(1.1);
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #007bff; 
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s, background-color 0.3s; 
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.adlogo {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: -12px;
+    font-size: 25px;
+}
